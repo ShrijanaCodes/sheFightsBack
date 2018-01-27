@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:ems="10"
+        android:text="AUDIO RESOURCE"
+        android:textAlignment="center"
+        android:textColor="?attr/colorControlActivated"
+        android:textColorHighlight="@android:color/holo_blue_bright"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="115dp"
+        android:layout_height="107dp"
+        android:layout_above="@+id/textView3"
+        android:layout_toEndOf="@+id/mRecordButton"
+        android:layout_toRightOf="@+id/mRecordButton"
+        app:srcCompat="@drawable/pause" />
+
+    <ImageButton
+        android:id="@+id/mRecordButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText2"
+        app:srcCompat="@drawable/record" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_below="@+id/editText2"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:layout_toRightOf="@+id/imageButton3"
+        app:srcCompat="@drawable/send" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:text="IMAGE RESOURCE"
+        android:background="@color/colorPrimaryDark"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColor="?attr/colorControlActivated"
+        android:textColorHighlight="@android:color/holo_blue_bright"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/camera" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@color/colorPrimaryDark"
+        android:ems="10"
+        android:text="ADD NOTES"
+        android:textAlignment="center"
+        android:textColor="?attr/colorControlActivated"
+        android:textColorHighlight="@android:color/holo_blue_bright"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/notes" />
+    </LinearLayout>
+
+</RelativeLayout>
